@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     body.style.fontFamily = roboto;
 
-    const container = document.getElementById("titleCounterContainerId");
-    const counter = document.getElementById("titleCounterId");
+    const getId = (id) => document.getElementById(id);
+
+    const container = getId("titleCounterContainerId");
+    const counter = getId("titleCounterId");
 
     if (!container || !counter) {
       console.error(
